@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara's Cafe</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.jpeg">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+  .nav-link{
+  transition: all 0.2s;
+  position: relative;
+}
+
+.nav-link:hover::after{
+  content: '';
+  height: 3px;
+  width: 100%;
+  background-color:black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+}
+
+.navbar-nav a{
+  font-size: 20px;
+}
+</style>
+
+</head>
+<body>
+    <div class="container-fluid"> <!--container start-->
+        <div class="row" style="background-color: pink;"> <!--navbar start-->
+            <div class="col-12" style="background-color: pink;">
+                <nav class="navbar navbar-expand-lg navbar-light " style="background-color: pink;">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav">
+                        <img src="images/logo.jpeg" alt="logo" height="50px" width="70px">
+                        <a class="nav-item nav-link" href="index.html" style="margin-left: 10px;">Home</a>
+                        <a class="nav-item nav-link active" href="about.html">About</a>
+                        <a class="nav-item nav-link" href="menu.html">Menu</a>
+                        <a class="nav-item nav-link" href="review.html">Review</a>
+                        <a class="nav-item nav-link" href="contact.html">Contact</a>
+                        <a class="nav-item nav-link" href="blog.html">Blogs</a>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div> <!--navbar end-->
+
+        <div class="row" style="background-color:lavender;text-align: center;"> <!--About start-->
+          <div class="col-12">
+            <h2 style="font-style: oblique;font-size: 100px;">ABOUT US</h2>
+            <h4>WHY CHOOSE US?</h4> <br>
+          </div>
+        </div>
+
+        <div class="row" style="background-color:lavender;">
+          <div class="col-6" style="text-align: center;">
+            <img src="images/abtt.webp" alt="image" height="400px" width="600px">
+          </div>
+          <div class="col-6" style="margin-top: 40px;">
+            <p style="font-size: 22px;font-style: italic;">Welcome to our Sara's Cafe, where we serve delicious coffee and fresh pastries in a warm, inviting atmosphere. Our friendly staff is dedicated to providing excellent service, making every visit a pleasant experience. We offer a variety of specialty drinks, homemade desserts, and light bites, perfect for a quick break or a relaxing time with friends. Come enjoy our comfortable seating and free Wi-Fi while savoring the best flavors in town.</p>
+               <button type="button" style="background-color: blue;color: white;padding: 10px;border: none;border-radius: 4px;">Free Delivery</button>
+               <button type="button" style="background-color: blue;color: white;padding: 10px;border: none;border-radius: 4px;">Easy Payment</button>
+               <button  type="button" style="background-color: blue;color: white;padding: 10px;border: none;border-radius: 4px;">24/7 Service</button> <br> <br>
+            <a href="blog.html"><button type="button" style="background-color:pink;color:black;padding: 10px;border: none;border-radius: 4px;">Learn More</button></a>
+          </div>
+        </div> <!--About End-->
+
+        <div class="row" style="background-color:lavender;"> <!--Our Master Chef   start-->
+          <div class="col-12"></div>
+          <h2 style="text-align: center;margin-top: 40px;">---Team Members---</h2>
+          <h4 style="text-align: center;">Our Master Chefs</h4>
+        </div>
+
+        <div class="row" style="background-color:lavender;text-align: center;">
+          <div class="col-3"> <!--chef 1--> <br>
+            <div class="card" style="width: 18rem;height: 450px;margin-left: 40px;background-color: pink;border: 3px solid black;margin-top: 30px;">
+              <img src="images/i1.png" class="card-img-top" alt="pic1" height="200px" width="150px">
+              <div class="card-body">
+                <h5 class="card-title" >David</h5>
+                <p class="card-text">With expertise in global street food, Chef David brings a world of flavors to the café. His inventive approach combines bold spices and vibrant ingredients, creating dishes that are as adventurous as they are delicious.</p>
+              </div>
+            </div>
+           </div>
+
+           <div class="col-3"><!--chef 2--> <br>
+            <div class="card" style="width: 18rem;height: 450px;margin-left: 40px;background-color: pink;border: 3px solid black;margin-top: 30px;">
+              <img src="images/i2.png" class="card-img-top" alt="pic2" height="200px" width="150px">
+              <div class="card-body">
+                <h5 class="card-title">Hannah</h5>
+                <p class="card-text">With a passion for farm-to-table cuisine, Chef Hannah crafts dishes that celebrate seasonal, local ingredients. Her culinary creations are a fusion of traditional and modern flavors, bringing a fresh twist to classic dishes.</p>
+              </div>
+            </div>
+           </div>
+
+           <div class="col-3"> <!--chef 3--> <br>
+            <div class="card" style="width: 18rem;height: 450px;margin-left: 40px;background-color: pink;border: 3px solid black;margin-top: 30px;">
+              <img src="images/i3.jpg" class="card-img-top" alt="pic3" height="200px" width="150px">
+              <div class="card-body">
+                <h5 class="card-title">Ram</h5>
+                <p class="card-text">Chef Ram specializes in Italian cuisine, infusing every dish with authentic flavors and a touch of innovation. His love for handmade pasta and fresh ingredients makes every plate a journey to Italy.</p>
+              </div>
+            </div>
+           </div>
+
+           <div class="col-3"> <!--chef 4--> <br>
+            <div class="card" style="width: 18rem;height: 450px;margin-left: 40px;background-color: pink;border: 3px solid black;margin-top: 30px;">
+              <img src="images/i2.png" class="card-img-top" alt="pic3" height="200px" width="150px">
+              <div class="card-body">
+                <h5 class="card-title">Lisa</h5>
+                <p class="card-text">Chef Lisa is renowned for her delightful pastries and desserts. With a flair for the artistic and a keen sense of taste, she transforms simple ingredients into sweet masterpieces that captivate both the eye and palate.</p>
+              </div>
+            </div>
+           </div>
+        </div> <!--Our Master Chef    end-->
+
+        <div class="row" style="background-color:lavender;padding: 20px;text-align: center;"> <!--Our Service Start-->
+          <h4 style="text-align: center;margin-top: 40px;">OUR SERVICES</h4> <br>
+          <div class="col-3"> <!--service 1--> <br>
+            <div class="card" style="width: 18rem;height: 250px;margin-left: 40px;background-color: black;border: 3px solid black;margin-top: 30px;">
+              <div class="card-body">
+                <h5 class="card-title" style="color: pink;">Master Chefs</h5>
+                <p class="card-text" style="color: white;font-style: italic;">Meet our Master Chef, the heart of our café's culinary team. With years of experience and a passion for crafting exquisite dishes, they bring a unique blend of creativity and tradition to every plate, ensuring a memorable dining experience for all.</p>
+              </div>
+            </div>
+           </div>
+
+           <div class="col-3"> <!--service 2--> <br>
+            <div class="card" style="width: 18rem;height: 250px;margin-left: 40px;background-color:black;border: 3px solid black;margin-top: 30px;">
+              <div class="card-body">
+                <h5 class="card-title" style="color: pink;" >Quality Food</h5>
+                <p class="card-text" style="color: white;font-style: italic;">At our café, we pride ourselves on offering high-quality food made from fresh, locally-sourced ingredients. Our menu features a diverse selection of flavorful dishes, crafted with care and creativity to ensure a memorable dining experience for every guest.</p>
+              </div>
+            </div>
+           </div>
+
+           <div class="col-3"> <!--service 3--> <br>
+            <div class="card" style="width: 18rem;height: 250px;margin-left: 40px;background-color: black;border: 3px solid black;margin-top: 30px;">
+              <div class="card-body">
+                <h5 class="card-title" style="color: pink;" >Online Order</h5>
+                <p class="card-text" style="color: white;font-style: italic;">Welcome to Sara's Cafe! We offer a delightful selection of freshly brewed coffees, artisan pastries, and gourmet dishes. Enjoy the convenience of online ordering and indulge in our handcrafted flavors from the comfort of your home. Quality and taste, delivered to you.</p>
+              </div>
+            </div>
+           </div>
+
+           <div class="col-3"> <!--service 4--> <br>
+            <div class="card" style="width: 18rem;height: 250px;margin-left: 40px;background-color:black;border: 3px solid black;margin-top: 30px;">
+              <div class="card-body">
+                <h5 class="card-title" style="color: pink;" >24/7 Service</h5>
+                <p class="card-text" style="color: white;font-style: italic;">Welcome to our café, open 24/7 to serve you at any hour. Whether you're craving a fresh brew, a hearty meal, or a sweet treat, our doors are always open. Enjoy great food and a cozy atmosphere anytime.</p>
+              </div>
+            </div>
+           </div>
+        </div> <!--Our Service End-->
+
+         <!--Contact-->
+         <div class="row" style="background-color:black;color: white;">
+          <!--Loaction-->
+          <div class="col-3" style="text-align: center;">
+            <br>
+              <h2>Location</h2>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248756.1313116749!2d80.04419915343976!3d13.047473316843673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1722486075952!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <!--Quick Links-->
+          <div class="col-3" style="text-align: center;">
+            <br>
+              <h2>Quick Links</h2>
+              <ul class="navbar-nav" style="color: pink;">
+              <li class="nav-item">
+                  <a class="nav-link navbar-brand" href="home.html" style="margin-top: 10px;">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link navbar-brand" href="about.html" style="margin-top: 10px;">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link navbar-brand" href="menu.html" style="margin-top: 10px;">Menu</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link navbar-brand" href="review.html" style="margin-top: 10px;">Review</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link navbar-brand" href="contact.html" style="margin-top: 10px;">Contact</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link navbar-brand" href="blog.html" style="margin-top: 10px;">Blogs</a>
+              </li>
+          </ul>
+          </div>
+          <!--Contact info-->
+          <div class="col-3" style="text-align: center;">
+            <br>
+              <h2>Contact Info</h2>
+              <h6 style="color: pink;margin-top: 10px;">9840880953</h6> <br>
+              <h2>Opening</h2>
+              <h6 style="color: pink;margin-top: 10px;">Mon-Fri  : 10am-8pm</h6>
+              <h6 style="color: pink;margin-top: 10px;">Sat-Sun  : 9am-10pm</h6>
+          </div>
+          <!--Follow us-->
+          <div class="col-3">
+            <br>
+              <h2>Follow Us</h2>
+              <div style="display: flex;margin-left: 5px;">
+                  <div><i class="fa-brands fa-instagram nav-link navbar-brand" style="margin-left: 10px;color: magenta;font-size: 30px;"></i></div>
+                  <div><i class="fa-brands fa-youtube nav-link navbar-brand" style="margin-left: 10px; color: red;font-size: 30px;"></i></div>
+                  <div><i class="fa-brands fa-facebook nav-link navbar-brand" style="margin-left: 10px;color: blue;font-size: 30px;"></i></div>
+              </div>
+
+          </div>
+          <h6 style="text-align: center;color: lavender;">copyright@2024Sara's Cafe</h6>
+        </div>
+
+
+
+    </div> <!--container end-->
+    <script src="bootstrap.bundle.js"></script>
+</body>
+</html>

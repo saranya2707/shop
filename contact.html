@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara's Cafe</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.jpeg">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+
+.nav-link{
+  transition: all 0.2s;
+  position: relative;
+}
+
+.nav-link:hover::after{
+  content: '';
+  height: 3px;
+  width: 100%;
+  background-color:black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+}
+
+.navbar-nav a{
+  font-size: 20px;
+}
+
+
+.contact-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin-left: 500px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color:blue;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color:green;
+}
+
+    </style>
+
+
+</head>
+<body>
+    <div class="container-fluid"> <!--container start-->
+        <div class="row" style="background-color: pink;"> <!--navbar start-->
+            <div class="col-12" style="background-color: pink;">
+                <nav class="navbar navbar-expand-lg navbar-light " style="background-color: pink;">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav">
+                        <img src="images/logo.jpeg" alt="logo" height="50px" width="70px">
+                        <a class="nav-item nav-link" href="index.html" style="margin-left: 10px;">Home</a>
+                        <a class="nav-item nav-link" href="about.html">About</a>
+                        <a class="nav-item nav-link" href="menu.html">Menu</a>
+                        <a class="nav-item nav-link" href="review.html">Review</a>
+                        <a class="nav-item nav-link active" href="contact.html">Contact</a>
+                        <a class="nav-item nav-link" href="blog.html">Blogs</a>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div> <!--navbar end-->
+
+        <div class="row" style="background-color: lavender;text-align: center;"> <!--contact us-->
+          <div class="col-12">
+            <h2 style="font-size: 100px;font-style: oblique;">CONTACT US</h2>
+            <h4>Contact For Any Query</h4>
+          </div>
+        </div>
+
+
+        <div class="row" style="background-color: lavender;text-align: center;padding: 20px;"> <!--Contact info-->
+          <div class="col-4"> <br>
+            <h2>BOOKING</h2>
+            <h6>sarascafebook.com</h6>
+          </div>
+          <div class="col-4"> <br>
+            <h2>GENERAL</h2>
+            <h6>sarascafegeneral.com</h6>
+          </div>
+          <div class="col-4"> <br>
+            <h2>TECHNICAL</h2>
+            <h6>sarascafetech.com</h6>
+          </div>
+        </div>
+
+
+        <div class="row" style="background-color: lavender;text-align: center;">
+          <div class="col-12">
+
+            <div class="contact-form">
+
+              <form action="#" method="post">
+                  <div class="form-group">
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="name" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="phone">Phone Number:</label>
+                      <input type="tel" id="phone" name="phone" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="message">Message:</label>
+                      <textarea id="message" name="message" rows="5" required></textarea>
+                  </div>
+                  <div class="form-group">
+                      <button type="submit" onclick="alert('Successfully Submitted')">Send</button>
+                  </div>
+              </form>
+          </div>
+          </div>
+
+
+        </div>
+
+
+
+
+
+
+         <!--Contact-->
+         <div class="row" style="background-color:black;color: white;">
+          <!--Loaction-->
+          <div class="col-3" style="text-align: center;">
+            <br>
+              <h2>Location</h2>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248756.1313116749!2d80.04419915343976!3d13.047473316843673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1722486075952!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <!--Quick Links-->
+          <div class="col-3" style="text-align: center;">
+            <br>
+              <h2>Quick Links</h2>
+              <ul class="navbar-nav" style="color: pink;">
+              <li class="nav-item">
+                  <a class="nav-link navbar-brand" href="home.html" style="margin-top: 10px;">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link navbar-brand" href="about.html" style="margin-top: 10px;">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link navbar-brand" href="menu.html" style="margin-top: 10px;">Menu</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link navbar-brand" href="review.html" style="margin-top: 10px;">Review</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link navbar-brand" href="contact.html" style="margin-top: 10px;">Contact</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link navbar-brand" href="blog.html" style="margin-top: 10px;">Blogs</a>
+              </li>
+          </ul>
+          </div>
+          <!--Contact info-->
+          <div class="col-3" style="text-align: center;">
+            <br>
+              <h2>Contact Info</h2>
+              <h6 style="color: pink;margin-top: 10px;">9840880953</h6> <br>
+              <h2>Opening</h2>
+              <h6 style="color: pink;margin-top: 10px;">Mon-Fri  : 10am-8pm</h6>
+              <h6 style="color: pink;margin-top: 10px;">Sat-Sun  : 9am-10pm</h6>
+          </div>
+          <!--Follow us-->
+          <div class="col-3">
+            <br>
+              <h2>Follow Us</h2>
+              <div style="display: flex;margin-left: 5px;">
+                  <div><i class="fa-brands fa-instagram nav-link navbar-brand" style="margin-left: 10px;color: magenta;font-size: 30px;"></i></div>
+                  <div><i class="fa-brands fa-youtube nav-link navbar-brand" style="margin-left: 10px; color: red;font-size: 30px;"></i></div>
+                  <div><i class="fa-brands fa-facebook nav-link navbar-brand" style="margin-left: 10px;color: blue;font-size: 30px;"></i></div>
+              </div>
+
+          </div>
+          <h6 style="text-align: center;color: lavender;">copyright@2024Sara's Cafe</h6>
+        </div>
+
+
+
+    </div> <!--container end-->
+    <script src="bootstrap.bundle.js"></script>
+</body>
+</html>
